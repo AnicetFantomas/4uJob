@@ -27,7 +27,7 @@ const Welcome = () => {
             value=""
             onChange={() => {}}
             placeholder="What are you looking for ?"
-            placeholderTextColor="#5b647b"
+            placeholderTextColor="#5b5b5b"
           />
         </View>
         <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
@@ -53,6 +53,9 @@ const Welcome = () => {
               <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
+          keyExtractor={(item) => item}
+          contentContainerStyle={{columnGap: SIZES.small}}
+          horizontal
         />
       </View>
     </View>
