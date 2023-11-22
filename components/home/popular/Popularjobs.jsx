@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text } from "react-native";
 import { useRouter } from "expo-router";
 import styles from "./popularjobs.style";
@@ -16,7 +16,13 @@ const Popularjobs = () => {
     num_pages: 1
   });
 
-  console.log(data);  
+  const [selectedJob, setSelectedJob] = useState();
+
+  const handleCardPress = (item) => {
+    
+  };
+
+  //console.log(data);  
 
   return (
     <View style={styles.container}>
@@ -39,7 +45,8 @@ const Popularjobs = () => {
             renderItem={({ item }) => (
               <PopularJobCard
                 item={item}
-                handleNavigate={() => router.push(`/job-details/${item}`)}
+                selectedJob={selectedJob}
+                handleCardPress={handleCardPress}
               />
             )}
             keyExtractor={(item) => item.id}
