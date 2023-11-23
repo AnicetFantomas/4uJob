@@ -1,26 +1,33 @@
-import { useState } from 'react';
-import { View, ScrollView, SafeAreaView } from 'react-native';
-import { Stack, useRouter } from 'expo-router';
+import { View, Text, ScrollView, SafeAreaView } from "react-native";
+import { Stack, useRouter } from "expo-router";
+import { useState } from "react";
 
-import { COLORS, icons, images, SIZES } from '../constants';
-import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components';
+import { COLORS, icons, images, SIZES } from "../constants";
+import {
+  Header,
+  HomeHeader,
+  Nearbyjobs,
+  Popularjobs,
+  ScreenHeaderBtn,
+  Welcome,
+} from "../components";
 
 const Home = () => {
   const router = useRouter();
 
- // const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
-        options = {{
-          headerStyle: {backgroundColor: COLORS.lightWhite },
+        options={{
+          headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.menu} dimension='60%' />
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
+            <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
           ),
           headerTitle: "",
         }}
@@ -34,6 +41,6 @@ const Home = () => {
       </ScrollView>
     </SafeAreaView>
   );
-}
+};
 
 export default Home;
