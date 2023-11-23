@@ -47,6 +47,7 @@ const Popularjobs = () => {
                 item={item}
                 selectedJob={selectedJob}
                 handleCardPress={handleCardPress}
+                key={`popular-job-${item?.job_id}`}
               />
             )}
             keyExtractor={(item) => item.id}
