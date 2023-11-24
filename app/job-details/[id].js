@@ -59,11 +59,12 @@ const JobDetails = () => {
            {
             isLoading ? (
                 <ActivityIndicator size='large' color={COLORS.primary} />
-            ) : error ? (<Text>No data available</Text>) : (
-                <View style={{ padding: SIZES.medium, paddingBottom: 0 }}>
+            ) : error ? (<Text>Something went wrong</Text>) : data.length === 0 ? (<Text>No data available</Text>) : (
+                <View style={{ padding: SIZES.medium, paddingBottom: 100 }}>
                     <Company
-                        company={data[0].employer_logo}
+                        companyLogo={data[0].employer_logo}
                         jobTitle={data[0].job_title}
+                        companyName={data[0].employer_name}
                         location={data[0].job_country}
                     />
                     <JobTabs
