@@ -7,7 +7,7 @@
 
 
 ## ERD
-![mobile (2)](https://github.com/devngeni/rapide-xpress/assets/94958024/5d886690-f898-4ed5-bf6b-724af55d1c34)
+![mobile (1)](https://github.com/devngeni/rapide-xpress/assets/94958024/1604bc9f-8307-417e-9b9b-3bacad0b81d5)
 
 
 
