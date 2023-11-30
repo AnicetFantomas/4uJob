@@ -15,8 +15,8 @@
 
 [ git clone https://github.com/AnicetFantomas/4uJob ](https://github.com/AnicetFantomas/4uJob)<Your-Build-Directory>
 ``` 
-- cd YouGallery
-- rails s
+- run yarn or npm install
+- yarn run start / npm start
 ```
 
 
