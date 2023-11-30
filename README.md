@@ -21,8 +21,9 @@
 
 
 ## Built with
-- Ruby 3.1.2 on Rails 7.0.3.1
-- PostgreSQL
+- React native
+- TypeScript
+- Expo CLI
 
 ## Prerequisites
 
@@ -30,34 +31,7 @@ Vscode or anyother
 Setup
 
 ## Install
-    Ruby
-    Rails
-
-### Development Database
-
-```sh
-# Create user
-sudo -u postgres createuser -e ced00 -s
-# Load the schema
-rails db:schema:load
-#----- If you want prefer this approach
-# Create the database
-rails db:create
-# Create database Migration
-rails db:migrate
-```
-
-### Run
-
-```sh
-rails s
-```
-
-## Run tests
-```sh
-bundle install
-rspec
-```
+    Expo CLI
 
 ## Authors
 
